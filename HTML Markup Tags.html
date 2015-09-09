@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html = lang = "en">
+    <head>
+    
+    <title>HTML Markup Tags</title>
+	<meta charset = "utf-8"/>
+    
+    <style>
+    	
+    	body{background-color: #98CBE4;}
+    	
+    	.sectionHead{font-weight: bold; text-indent: 125px; font-variant: small-caps; text-decoration: underline; font-size: 125%;}
+    	
+    	.dd1{font-weight: bold; line-height: 1.75;}
+       	.dt1{background: linear-gradient(to right, #E2FFD2, #98CBE4);}
+       	
+    	.list1{margin: 30px 0; margin-left: 175px;}
+    	.list2{margin: 30px 0; margin-left: 100px;}
+       
+       	.desc{font-weight: bold; line-height: 1.75;}
+       	.code{background: linear-gradient(to right, #E2FFD2, #98CBE4);}
+       	.num{line-height: 2;}
+       	
+       	table{border-spacing: 0px; text-align: left;}
+       	td{padding: 10px;}
+       	th{background-color: #993333; color: #ffffff;}
+       	.td1{border-right: 2px solid black;}
+       	.tr1{background-color: #999999; color: #ffffff}
+       	.tr2{background-color: #99CCCC; color: #ffffff}
+	
+        
+    </style>
+    
+    </head>
+    
+    <body> 
+    
+        <h2 align = "center">HTML Markup Tags</h2>
+        <h3 align = "center">Ryan Schubert</h3>
+        
+        <p class = "sectionHead">Web Page Section Tags</p>
+        
+        <dl class = "list1">
+            <dt class = "dt1" > < !DOCTYPE html ></dt>
+        		<dd class = "dd1" > - Document type definition, goes at the top of file</dd>
+            <dt class = "dt1" > < html > ... < / html > </dt>
+            	<dd class = "dd1" > - Start and end tag of an HTML document</dd>
+            <dt class = "dt1" > < head > ... < / head > </dt>
+            	<dd class = "dd1" > - Start and end of the heading section</dd>
+            <dt class = "dt1" > < body > ... < / body > </dt>
+                <dd class = "dd1" > - Start and end of the body (content) of the document</dd>
+            <dt class = "dt1" > < html lang = "en" ></dt>
+                <dd class = "dd1" > - attribute in the html tag specifying that the document is written in English</dd>
+            <dt class = "dt1" > < !-- comments -- ></dt>
+                <dd class = "dd1" > - "< !--" starts a comment and "-- >" ends the comments, multiline allowed</dd>
+        </dl>
+        
+        <p class = "sectionHead">Heading Section Tags</p>
+        
+        <dl class = "list1">
+            <dt class = "dt1" > < title > ... < / title > </dt>
+                <dd class = "dd1" > - Title of the document, displayed in the browser's title bar</dd>
+            <dt class = "dt1" > < meta charset = "utf-8" / > </dt>
+                <dd class = "dd1" > - Specifies the character set used in the document </br> - utf-8 is Unicode Transformation Format 8-bit ASCII compatible code</dd> 
+        </dl>
+
+        <p class = "sectionHead">Body Section Tags</p>
+        
+        <ol class = "list2">
+        	<li class = "num">Heading Tags</li>
+        		<ul>
+        			<li class = "code"> < h1 > ... < / h1 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 1</li>
+               			</ul>
+               		<li class = "code"> < h2 > ... < / h2 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 2</li>
+               			</ul>
+               		<li class = "code"> < h3 > ... < / h3 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 3</li>
+               			</ul>
+               		<li class = "code"> < h4 > ... < / h4 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 4</li>
+               			</ul>
+               		<li class = "code"> < h5 > ... < / h5 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 5</li>
+               			</ul>
+               		<li class = "code"> < h6 > ... < / h6 > </li>
+        				<ul>
+               				<li class = "desc">Heading level 6</li>
+               			</ul>
+               		</ul>
+               	<li class = "num">Block Organization Tags</li>
+               		<ul>
+               			<li class = "code"> < p > ... < / p > </li> 
+        					<ul>
+               					<li class = "desc">Paragraph</li>
+               				</ul>
+               			<li class = "code">< br / > </li>
+        					<ul>
+               					<li class = "desc">Line break</li>
+               				</ul>
+               			<li class = "code"> < blockquote > ... < / blockquote > </li>
+        					<ul>
+               					<li class = "desc">Block Quotation</li>
+               				</ul>
+               			<li class = "code"> < div > ... < / div > </li>
+        					<ul>
+               					<li class = "desc">Creates a division (section) in a document</li>
+               				</ul>
+               			</ul>
+               		<li class = "num">List Tags</li>
+               			<ul>
+               				<li class = "code"> < ul > ... < / ul > </li>
+        						<ul>
+               						<li class = "desc">Unordered List</li>
+               					</ul>
+               				<li class = "code"> < ol > ... < / ol > </li>
+        						<ul>
+               						<li class = "desc">Ordered List</li>
+               					</ul>
+               				<li class = "code"> < li > ... < / li > </li>
+        						<ul>
+               						<li class = "desc">List item within an ordered or unordered list</li>
+               					</ul>
+               				<li class = "code"> < dl > ... < / dl > </li>
+        						<ul>
+               						<li class = "desc">Definition list</li>
+               					</ul>
+               				<li class = "code"> < dt > ... < / dt > </li>
+        						<ul>
+               						<li class = "desc">Definition term (item) within a definition list</li>
+               					</ul>
+               				<li class = "code"> < dd > ... < / dd > </li>
+        						<ul>
+               						<li class = "desc">Definition for a term within a definition list</li>
+               					</ul>
+               				</ul>
+               		<li class = "num">Link Tags</li>
+               			<ul>
+               				<li class = "code"> < a href = "url" > ... < / a > </li>
+        						<ul>
+               						<li class = "desc">Anchor link, link to another page</li>
+               					</ul>
+               				<li class = "code"> < a href = "url#name" > ... < / a > </li>
+        						<ul>
+               						<li class = "desc">Link to an anchor point, "name", within a page</li>
+               					</ul>
+               				<li class = "code"> < img src = "url" alt = "text" / > </li>
+        						<ul>
+               						<li class = "desc">Insert an image found at the URL, alternate text is hidden caption</li>
+               					</ul>
+               				<li class = "code"> < link rel = "text" href = "url" > </li>
+        						<ul>
+               						<li class = "desc">Creates a hyperlink</li>
+               					</ul>
+               				<li class = "code"> < script > ... < / script > </li>
+        						<ul>
+               						<li class = "desc">Defines a client-side script, such as a JavaScript</li>
+               					</ul>
+               				</ul>
+               		<li class = "num">Text Display Tags</li>
+               			<ul>
+               				<li class = "code"> < em > ... < / em ></li>
+        						<ul>
+               						<li class = "desc">Italics</li>
+               					</ul>
+               				<li class = "code"> < sub > ... < /sub > </li>
+        						<ul>
+               						<li class = "desc">Subscript</li>
+               					</ul>
+               				<li class = "code"> < sup > ... < /sup ></li>
+        						<ul>
+               						<li class = "desc">Superscript</li>
+               					</ul>
+               				<li class = "code"> < code > ... < / code ></li>
+        						<ul>
+               						<li class = "desc">Uses a fixed space, computer code font</li>
+               					</ul>
+               				</ul>
+               			<li class = "num">Table Tags</li>
+               				<ul>
+               					<li class = "code"> < table > ... < /table > </li>
+        							<ul>
+               							<li class = "desc">Table, contains table rows which contain table headings and data</li>
+               						</ul>
+               					<li class = "code"> < tr > ... < / tr > </li>
+        							<ul>
+               							<li class = "desc">Table row, contains headings and data</li>
+               						</ul>
+               					<li class = "code"> < th > ... < / th > </li>
+        							<ul>
+               							<li class = "desc">Table heading item</li>
+               						</ul>
+               					<li class = "code"> < td > ... < / td > </li>
+        							<ul>
+               							<li class = "desc"> Table data item</li>
+               						</ul>
+               					<li class = "code"> < th colspan = "3" > ... < / th > </li>
+        							<ul>
+               							<li class = "desc">Table heading with column span of 3 columns (td also works)</li>
+               						</ul>
+               					<li class = "code"> < th rowspan = "4" > ... < / th > </li>
+        							<ul>
+               							<li class = "desc">Table heading with row span of 4 rows (td also works)</li>
+               						</ul>
+               					<li class = "code"> < caption > ... < / caption > </li>
+        							<ul>
+               							<li class = "desc">Gives a caption for the table</li>
+               						</ul>
+               					</ul>
+               			<li class = "num">Form Tags</li>
+               				<ul>
+               					<li class = "code"> < form action = "action" > ... < / form ></li>
+        						<li class = "code"> < input type = "text" name = "theName" size = "25" maxLength = "30 / ></li>
+        						<li class = "code"> < input type = "password" name = "myPassword" size = "10" maxLength = "10" / ></li>
+        						<li class = "code"> < input type = "checkbox" name = "buttonName" value = "dataValue" checked = "checked / > </li>
+        						<li class = "code"> < input type = "radio" name = "buttonName" value = " " checked = "checked" / ></li>
+        						<li class = "code"> < input type = "submit" value = "Submit Form" / > </li>
+        						<li class = "code"> < input type = "reset" value = "Reset Form" / > </li>
+        					</ul>
+        			</ul>
+        	
+        	</br>
+        	</br>
+        	</br>
+        			
+        <table>
+        	<tr>
+    			<th>Method</td>
+    			<th>Description</td> 
+  			</tr>
+  			<tr class = "tr1">
+    			<td class = "td1">GET</td>
+    			<td>Returns the contents of the specified document</td> 
+  			</tr>
+  			<tr class = "tr2">
+  				<td class = "td1">HEAD</td>
+  				<td>Returns the header information for the specified document</td>
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">POST</td>
+  				<td>Executes the specified document, using the enclosed data</td>
+  			</tr>
+  			<tr class = "tr2">
+  				<td class = "td1">PUT</td>
+  				<td>Replaces the specified document with the enclosed data</td>
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">DELETE</td>
+  				<td>Deletes the specified document</td>
+  			</tr>
+		</table>	
+            
+    </body>
+    
+</html>
