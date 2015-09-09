@@ -22,13 +22,14 @@
        	.num{line-height: 2;}
        	
        	table{border-spacing: 0px; text-align: left;}
-       	td{padding: 10px;}
+       	td{padding: 10px; border-bottom: 2px solid black;}
        	th{background-color: #993333; color: #ffffff;}
        	.td1{border-right: 2px solid black;}
+		.td2{border-bottom: 0px ; border-right: 2px solid black;}
+		.td3{border-bottom: 0px ; border-right: 0px solid black;}
        	.tr1{background-color: #999999; color: #ffffff}
-       	.tr2{background-color: #99CCCC; color: #ffffff}
-	
-        
+
+	      
     </style>
     
     </head>
@@ -231,28 +232,69 @@
         			
         <table>
         	<tr>
-    			<th>Method</td>
-    			<th>Description</td> 
+    			<th>Character</th>
+    			<th>Entity</th>
+				<th>Meaning</th>
   			</tr>
   			<tr class = "tr1">
-    			<td class = "td1">GET</td>
-    			<td>Returns the contents of the specified document</td> 
-  			</tr>
-  			<tr class = "tr2">
-  				<td class = "td1">HEAD</td>
-  				<td>Returns the header information for the specified document</td>
+    			<td class = "td1">&amp;</td>
+    			<td class = "td1"> &amp;amp; </td>
+				<td>Ampersand</td> 
   			</tr>
   			<tr class = "tr1">
-  				<td class = "td1">POST</td>
-  				<td>Executes the specified document, using the enclosed data</td>
-  			</tr>
-  			<tr class = "tr2">
-  				<td class = "td1">PUT</td>
-  				<td>Replaces the specified document with the enclosed data</td>
+  				<td class = "td1">&lt;</td>
+    			<td class = "td1"> &amp;lt; </td>
+				<td>is less than</td> 
   			</tr>
   			<tr class = "tr1">
-  				<td class = "td1">DELETE</td>
-  				<td>Deletes the specified document</td>
+  				<td class = "td1">&gt;</td>
+    			<td class = "td1"> &amp;gt; </td>
+				<td>is greater than</td>  
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">&quot;</td>
+    			<td class = "td1"> &amp;quot; </td>
+				<td>Double quote</td> 
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">&apos;</td>
+    			<td class = "td1"> &amp;apos; </td>
+				<td>Single quote (apostrophe)</td> 
+  			</tr>
+			<tr class = "tr1">
+    			<td class = "td1">&frac14;</td>
+    			<td class = "td1"> &amp;frac14; </td>
+				<td>One-quarter</td> 
+  			</tr>
+			<tr class = "tr1">
+  				<td class = "td1">&frac12;</td>
+    			<td class = "td1"> &amp;frac12; </td>
+				<td>One-half</td> 
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">&frac12;</td>
+    			<td class = "td1"> &amp;frac34; </td>
+				<td>Three-quarters</td> 
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">&deg;</td>
+    			<td class = "td1"> &amp;deg; </td>
+				<td>Degree</td>  
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">(space)</td>
+    			<td class = "td1"> &amp;nbsp; </td>
+				<td>Nonbreaking space</td> 
+  			</tr>
+  			<tr class = "tr1">
+  				<td class = "td1">&copy;</td>
+    			<td class = "td1"> &amp;copy; </td>
+				<td>Copyright</td> 
+  			</tr>
+			<tr class = "tr1">
+  				<td class = "td2">&euro;</td>
+    			<td class = "td2"> &amp;euro; </td>
+				<td class = "td3">Euro</td> 
   			</tr>
 		</table>	
             
