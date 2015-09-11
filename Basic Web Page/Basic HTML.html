@@ -8,9 +8,17 @@
 	
 	<style>
 	
-	td{background-color: #0069aa;}
-	table{width: "100%";}
-	.body{background-color: #fofofo ; color: black;}
+	*{background-color: #0069aa;}
+	body{border: none;}
+	td{background-color: #0069aa; color: white; border: solid 0px; padding: 5px; vertical-align: center;}
+	table{width: 100%; border-collapse: collapse;}
+	.tableBody{background-color: #f0f0f0; color: black; height: 100px}
+	.tdHead{text-align: center;}
+	h2{display: inline;}
+	span.left{font-size: 2em ; float: left; border: solid 3px white; font-weight: bold; font-style: italic;}
+	#left{float: left;}
+	#right{float: right;}
+	
 	
 	</style>
 	
@@ -20,22 +28,29 @@
 	
 	<table>
 		<tr>
-			<td>
+			<td class = tdHead style = "width: 30px";>
 			
-			<img src = "EC.horiz.2945.jpg"  height = "200px"  width = "792.08px"  alt = "logo"/>
-			<h2>Basic HTML Tags</h2>
+			<span class = left>E</span>
+			
+			</td>
+			<td class = tdHead>	
+				<h2>Basic HTML Tags</h2>
+			</td>
+			<td style = "width: 30px>	
+				<div id = "right">Bye</div>
+			</td>
 		
 			</td>
 		</tr>
 		<tr>
-			<td class = "body">
+			<td class = "tableBody" colspan = 3>
 			
 			Body of the notes
 			
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td colspan = 3>
 			
 			by Ryan Schubert
 			
