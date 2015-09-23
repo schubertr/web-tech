@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Ryan's GPA Calculator</title>
+
+<style>
+
+td{text-align: center;}
+input.hide{visibility: hidden}
+
+</style>
+
+<script type = "text/javascript">
+<!--
+function computeGPA()
+{
+	var gpa, qpts, totalQpts = 0, totalCredits = 0;
+	
+	qpts = parseFloat(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit1.value);
+	
+	qpts = parseFloat(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit2.value);
+	
+	qpts = parseFloat(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit3.value);
+	
+	qpts = parseFloat(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit4.value);
+	
+	qpts = parseFloat(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit5.value);
+	
+	qpts = parseFloat(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
+	
+	totalQpts += qpts;
+	totalCredits += parseFloat(document.calculator.credit6.value);
+	
+	gpa = totalQpts/totalCredits;
+	
+	alert("GPA = " + gpa);
+}
+// -->
+</script>
+
+</head>
+
+<body>
+
+<form name = "calculator" action = "">
+
+<table>
+	<tr>
+		<th>Class</th>
+		<th>Grade</th>
+		<th>Credits</th>
+	</tr>
+	<tr>
+		<th>Class 1</th>
+		<td><input type = "text" name = "grade1" size = "3" />
+		<td><input type = "text" name = "credit1" size = "3"/></td>
+	</tr>
+	<tr>
+		<th>Class 2</th>
+		<td><input type = "text" name = "grade2" size = "3" />
+		<td><input type = "text" name = "credit2" size = "3"/></td>
+	</tr>
+	<tr>
+		<th>Class 3</th>
+		<td><input type = "text" name = "grade3" size = "3" />
+		<td><input type = "text" name = "credit3" size = "3"/></td>
+	</tr>
+	<tr>
+		<th>Class 4</th>
+		<td><input type = "text" name = "grade4" size = "3" />
+		<td><input type = "text" name = "credit4" size = "3"/></td>
+	</tr>
+	<tr>
+		<th>Class 5</th>
+		<td><input type = "text" name = "grade5" size = "3" />
+		<td><input type = "text" name = "credit5" size = "3"/></td>
+	</tr>
+	<tr>
+		<th>Class 6</th>
+		<td><input type = "text" name = "grade6" size = "3" />
+		<td><input type = "text" name = "credit6" size = "3"/></td>
+	</tr>
+	<tr>
+		<td colspan = "3">Calculated GPA: <input class = "hide" type = "text" name = "gpa" size = "5" />
+		</br>
+		<input type = "button" value = "Calculate" onclick = "computeGPA();" />
+		</td>
+	</tr>
+</table>
+
+</form>
+		
+</body>
+
+
+
+</html>
