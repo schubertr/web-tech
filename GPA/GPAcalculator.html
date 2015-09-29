@@ -19,39 +19,113 @@ function computeGPA()
 {
 	var gpa, qpts, totalQpts = 0, totalCredits = 0;
 	
-	qpts = parseFloat(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
+	if(document.calculator.grade1.value != "" && document.calculator.credit1.value != "")
+	{
+	alert("in here");
+		if(typeof document.calculator.grade1.value === 'number')
+			qpts = parseFloat(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
+		else
+			qpts = getNum(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit1.value);
+	}
 	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit1.value);
+	if(document.calculator.grade2.value != "" && document.calculator.credit2.value != "")
+	{
+		if(typeof document.calculator.grade2.value === 'number')
+			qpts = parseFloat(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
+		else
+			qpts = getNum(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit2.value);
+	}
 	
-	qpts = parseFloat(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
+	if(document.calculator.grade3.value != "" && document.calculator.credit3.value != "")
+	{
+		if(typeof document.calculator.grade3.value === 'number')
+			qpts = parseFloat(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
+		else
+			qpts = getNum(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit3.value);
+	}
 	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit2.value);
+	if(document.calculator.grade4.value != "" && document.calculator.credit4.value != "")
+	{
+		if(typeof document.calculator.grade4.value === 'number')
+			qpts = parseFloat(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
+		else
+			qpts = getNum(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit4.value);
+	}
 	
-	qpts = parseFloat(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
+	if(document.calculator.grade5.value != "" && document.calculator.credit5.value != "")
+	{
+		if(typeof document.calculator.grade5.value === 'number')
+			qpts = parseFloat(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
+		else
+			qpts = getNum(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit5.value);
+	}
 	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit3.value);
-	
-	qpts = parseFloat(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
-	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit4.value);
-	
-	qpts = parseFloat(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
-	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit5.value);
-	
-	qpts = parseFloat(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
-	
-	totalQpts += qpts;
-	totalCredits += parseFloat(document.calculator.credit6.value);
+	if(document.calculator.grade6.value != "" && document.calculator.credit6.value != "")
+	{
+		if(typeof document.calculator.grade6.value === 'number')
+			qpts = parseFloat(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
+		else
+			qpts = getNum(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
+		
+		totalQpts += qpts;
+		totalCredits += parseFloat(document.calculator.credit6.value);
+	}
 	
 	gpa = totalQpts/totalCredits;
 	
 	alert("GPA = " + gpa);
+}
+
+function getNum(var grade)
+{	
+	if(grade == "A" || grade == "a")
+		return 4.0;
+	else if(grade == "A-" || grade == "a-")
+		return 3.7;
+	else if(grade == "B+" || grade == "b+")
+		return 3.3;
+	else if(grade == "B" || grade == "b")
+		return 3.0;
+	else if(grade == "B-" || grade == "b-")
+		return 2.7;
+	else if(grade == "C+" || grade == "c+")
+		return 2.3;
+	else if(grade == "C" || grade == "c")
+		return 2.0;
+	else if(grade == "C-" || grade == "c-")
+		return 1.7;
+	else if(grade == "D+" || grade == "d+")
+		return 1.3;
+	else if(grade == "D" || grade == "d")
+		return 1.0;
+	else if(grade == "D-" || grade == "d-")
+		return 0.7;
+	else if(grade == "F" || grade == "f")
+		return 0.0;
+	else if(grade == "P" || grade == "p")
+		return -1.0;
+	else if(grade == "NP" || grade == "np" || grade == "Np")
+		return -1.0;
+	else
+	{
+		alert("\"" + grade + "\" is not a valid grade.");
+		return -2.0;
+	}
 }
 // -->
 </script>
