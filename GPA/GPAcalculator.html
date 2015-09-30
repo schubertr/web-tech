@@ -8,7 +8,11 @@
 
 <style>
 
-td{text-align: center;}
+body{background-color: #96C0CE; width: 100%}
+html{width: 100%}
+td{text-align: center; background-color: #FEF6EB;}
+th{background-color: #FEF6EB;}
+table{border-collapse: collapse; margin: 0 auto; margin-top: 13%;}
 input.hide{visibility: hidden}
 
 </style>
@@ -21,69 +25,164 @@ function computeGPA()
 	
 	if(document.calculator.grade1.value != "" && document.calculator.credit1.value != "")
 	{
-	alert("in here");
-		if(typeof document.calculator.grade1.value === 'number')
+		if(typeof document.calculator.grade1.value == 'number')
 			qpts = parseFloat(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
 		else
-			qpts = getNum(document.calculator.grade1.value) * parseFloat(document.calculator.credit1.value);
-		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit1.value);
+			{
+				qpts = getNum(document.calculator.grade1.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit1.value);
+					}
+				else
+				{
+					return;
+				}
+			}
+			
+	if(qpts != 2.0)	
+		if(qpts != -1.0)
+		{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit1.value);
+		}
 	}
 	
 	if(document.calculator.grade2.value != "" && document.calculator.credit2.value != "")
 	{
-		if(typeof document.calculator.grade2.value === 'number')
+		if(typeof document.calculator.grade2.value == 'number')
 			qpts = parseFloat(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
 		else
-			qpts = getNum(document.calculator.grade2.value) * parseFloat(document.calculator.credit2.value);
+			{
+				qpts = getNum(document.calculator.grade2.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit2.value);
+					}
+				else
+				{
+					return;
+				}
+			}
 		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit2.value);
+		if(qpts != 2.0)	
+			if(qpts != -1.0)
+			{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit2.value);
+			}
 	}
 	
 	if(document.calculator.grade3.value != "" && document.calculator.credit3.value != "")
 	{
-		if(typeof document.calculator.grade3.value === 'number')
+		if(typeof document.calculator.grade3.value == 'number')
 			qpts = parseFloat(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
 		else
-			qpts = getNum(document.calculator.grade3.value) * parseFloat(document.calculator.credit3.value);
-		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit3.value);
+			{
+				qpts = getNum(document.calculator.grade3.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit3.value);
+					}
+				else
+				{
+					return;
+				}
+			}
+			
+		if(qpts != 2.0)	
+			if(qpts != -1.0)
+			{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit3.value);
+			}
 	}
 	
 	if(document.calculator.grade4.value != "" && document.calculator.credit4.value != "")
 	{
-		if(typeof document.calculator.grade4.value === 'number')
+		if(typeof document.calculator.grade4.value == 'number')
 			qpts = parseFloat(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
 		else
-			qpts = getNum(document.calculator.grade4.value) * parseFloat(document.calculator.credit4.value);
-		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit4.value);
+			{
+				qpts = getNum(document.calculator.grade4.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit4.value);
+					}
+				else
+				{
+					return;
+				}
+			}
+			
+		if(qpts != 2.0)	
+			if(qpts != -1.0)
+			{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit4.value);
+			}
 	}
 	
 	if(document.calculator.grade5.value != "" && document.calculator.credit5.value != "")
 	{
-		if(typeof document.calculator.grade5.value === 'number')
+		if(typeof document.calculator.grade5.value == 'number')
 			qpts = parseFloat(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
 		else
-			qpts = getNum(document.calculator.grade5.value) * parseFloat(document.calculator.credit5.value);
-		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit5.value);
+			{
+				qpts = getNum(document.calculator.grade5.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit5.value);
+					}
+				else
+				{
+					return;
+				}
+			}
+			
+		if(qpts != 2.0)	
+			if(qpts != -1.0)
+			{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit5.value);
+			}
 	}
 	
 	if(document.calculator.grade6.value != "" && document.calculator.credit6.value != "")
 	{
-		if(typeof document.calculator.grade6.value === 'number')
+		if(typeof document.calculator.grade6.value == 'number')
 			qpts = parseFloat(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
 		else
-			qpts = getNum(document.calculator.grade6.value) * parseFloat(document.calculator.credit6.value);
-		
-		totalQpts += qpts;
-		totalCredits += parseFloat(document.calculator.credit6.value);
+			{
+				qpts = getNum(document.calculator.grade6.value);
+				
+				if(qpts != -2.0)
+					{
+						if(qpts != -1.0)
+							qpts *= parseFloat(document.calculator.credit6.value);
+					}
+				else
+				{
+					return;
+				}
+			}
+			
+		if(qpts != 2.0)	
+			if(qpts != -1.0)
+			{
+				totalQpts += qpts;
+				totalCredits += parseFloat(document.calculator.credit6.value);
+			}
 	}
 	
 	gpa = totalQpts/totalCredits;
@@ -91,7 +190,7 @@ function computeGPA()
 	alert("GPA = " + gpa);
 }
 
-function getNum(var grade)
+function getNum(grade)
 {	
 	if(grade == "A" || grade == "a")
 		return 4.0;
